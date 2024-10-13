@@ -1,0 +1,37 @@
+# A Docker Compose file for testing the Weekly Activity Tracker application on a local development machine.
+
+services:
+    weekly-target-api:
+        image: ghcr.io/tehmaxwell/weekly-activity-tracker/weeklytargetapi:develop
+        ports:
+            - "30000:8080"
+            - "30001:8081"
+        depends_on:
+            weekly-target-api-init-database:
+                condition: service_completed_successfully
+            postgres:
+                condition: service_healthy
+        environment:
+            ConnectionStrings__WeeklyTarget: "User ID=postgres;Password=mypasswordisgreat123;Host=postgres;Port=5432;Database=WeeklyTarget;"
+    weekly-target-api-init-database:
+        image: ghcr.io/tehmaxwell/weekly-activity-tracker/weeklytargetapi-initdatabase:develop
+        depends_on:
+            postgres:
+                condition: service_healthy
+        environment:
+            ConnectionStrings__WeeklyTarget: "User ID=postgres;Password=mypasswordisgreat123;Host=postgres;Port=5432;Database=WeeklyTarget;"
+    postgres:
+        image: postgres
+        restart: always
+        healthcheck:
+            test: ["CMD-SHELL", "pg_isready"]
+            interval: 1s
+            timeout: 5s
+            retries: 10
+        environment:
+            POSTGRES_PASSWORD: mypasswordisgreat123
+        volumes:
+            - pgdata:/var/lib/postgresql/data
+
+volumes:
+    pgdata:    

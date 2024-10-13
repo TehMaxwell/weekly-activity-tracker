@@ -5,6 +5,7 @@ VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2455C29A-799D-4ED0-90C9-FB7C9F259B98}"
 	ProjectSection(SolutionItems) = preProject
+		docker-compose.yaml = docker-compose.yaml
 		README.md = README.md
 	EndProjectSection
 EndProject
@@ -15,6 +16,12 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeeklyActivityTracker.WeeklyTargetAPI", "WeeklyActivityTracker.WeeklyTargetAPI\WeeklyActivityTracker.WeeklyTargetAPI.csproj", "{54FCE30C-9BE3-49CC-A1CC-C3EC4ADEAFD6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeeklyActivityTracker.WeeklyTargetAPI.InitDatabase", "WeeklyActivityTracker.WeeklyTargetAPI.InitDatabase\WeeklyActivityTracker.WeeklyTargetAPI.InitDatabase.csproj", "{8C9EEBA5-B80D-4317-9702-EC9870526B23}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Github Actions", "Github Actions", "{D59F262B-E4A6-43D9-B03B-D7AF09C5CE09}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\docker-publish-WeeklyTargetAPI.yml = .github\workflows\docker-publish-WeeklyTargetAPI.yml
+		docker-publish-WeeklyTargetAPIInitDatabase.yaml = docker-publish-WeeklyTargetAPIInitDatabase.yaml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +48,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D59F262B-E4A6-43D9-B03B-D7AF09C5CE09} = {2455C29A-799D-4ED0-90C9-FB7C9F259B98}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {797391E9-27B0-485B-BCCE-E79667167286}
