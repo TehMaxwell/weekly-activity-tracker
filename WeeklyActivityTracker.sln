@@ -3,14 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeeklyActivityTracker", "WeeklyActivityTracker\WeeklyActivityTracker.csproj", "{5A56D831-EE43-436A-8CE4-80862891555B}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2455C29A-799D-4ED0-90C9-FB7C9F259B98}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeeklyActivityTracker.Models", "WeeklyActivityTracker.Models\WeeklyActivityTracker.Models.csproj", "{FED41179-64DF-466A-A534-12BAED8C2778}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeeklyActivityTracker.Models", "WeeklyActivityTracker.Models\WeeklyActivityTracker.Models.csproj", "{FED41179-64DF-466A-A534-12BAED8C2778}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeeklyActivityTracker.Data", "WeeklyActivityTracker.Data\WeeklyActivityTracker.Data.csproj", "{33D1E0C8-BF5D-40AE-AF50-FE75096A2AE5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeeklyActivityTracker.WeeklyTargetAPI", "WeeklyActivityTracker.WeeklyTargetAPI\WeeklyActivityTracker.WeeklyTargetAPI.csproj", "{54FCE30C-9BE3-49CC-A1CC-C3EC4ADEAFD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeeklyActivityTracker.WeeklyTargetAPI.InitDatabase", "WeeklyActivityTracker.WeeklyTargetAPI.InitDatabase\WeeklyActivityTracker.WeeklyTargetAPI.InitDatabase.csproj", "{8C9EEBA5-B80D-4317-9702-EC9870526B23}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,14 +22,22 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5A56D831-EE43-436A-8CE4-80862891555B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5A56D831-EE43-436A-8CE4-80862891555B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5A56D831-EE43-436A-8CE4-80862891555B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5A56D831-EE43-436A-8CE4-80862891555B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FED41179-64DF-466A-A534-12BAED8C2778}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FED41179-64DF-466A-A534-12BAED8C2778}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FED41179-64DF-466A-A534-12BAED8C2778}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FED41179-64DF-466A-A534-12BAED8C2778}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33D1E0C8-BF5D-40AE-AF50-FE75096A2AE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33D1E0C8-BF5D-40AE-AF50-FE75096A2AE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33D1E0C8-BF5D-40AE-AF50-FE75096A2AE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33D1E0C8-BF5D-40AE-AF50-FE75096A2AE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54FCE30C-9BE3-49CC-A1CC-C3EC4ADEAFD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54FCE30C-9BE3-49CC-A1CC-C3EC4ADEAFD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54FCE30C-9BE3-49CC-A1CC-C3EC4ADEAFD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54FCE30C-9BE3-49CC-A1CC-C3EC4ADEAFD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C9EEBA5-B80D-4317-9702-EC9870526B23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C9EEBA5-B80D-4317-9702-EC9870526B23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C9EEBA5-B80D-4317-9702-EC9870526B23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C9EEBA5-B80D-4317-9702-EC9870526B23}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

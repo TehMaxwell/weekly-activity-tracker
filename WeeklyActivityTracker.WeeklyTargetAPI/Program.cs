@@ -5,11 +5,22 @@
  * DESCRIPTION: The main program file for the Weekly Activity Tracker application backend.
  */
 
+using Microsoft.EntityFrameworkCore;
+using WeeklyActivityTracker.Data.WeeklyTarget;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// Adding database context
+builder.Services.AddDbContext<WeeklyTargetDbContext>(options =>
+{
+    options.UseNpgsql(builder.Configuration.GetConnectionString("WeeklyTarget"));
+});
+
+// Add services to the container
+builder.Services.AddScoped<IWeeklyTargetDataLayer, WeeklyTargetDataLayer>();
 
 builder.Services.AddControllers();
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

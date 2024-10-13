@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "WeeklyActivityTracker.WeeklyTargetAPI.InitDatabase": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}

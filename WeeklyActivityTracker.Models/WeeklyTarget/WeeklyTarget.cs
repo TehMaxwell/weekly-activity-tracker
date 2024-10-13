@@ -9,6 +9,9 @@ using System.ComponentModel.DataAnnotations;
 
 namespace WeeklyActivityTracker.Models.WeeklyTarget
 {
+    /// <summary>
+    /// A model that describes Weekly Target information.
+    /// </summary>
     public class WeeklyTarget
     {
         // PROPERTIES
