@@ -30,6 +30,7 @@ services:
             retries: 10
         environment:
             POSTGRES_PASSWORD: mypasswordisgreat123
+            PGUSER: postgres
         volumes:
             - pgdata:/var/lib/postgresql/data
 
