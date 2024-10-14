@@ -7,11 +7,9 @@ export default function Home() {
         <h1>I'm starting my own thing now.</h1>
       </header>
 
-      <div>
-        <p>
-          
-        </p>
-      </div>
+      <main className="flex min-h-screen flex-col p-5">
+        Ding dong, bing bong.
+      </main>
 
       <footer>
         <h2>This is the footer.</h2>
